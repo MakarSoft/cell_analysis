@@ -8,6 +8,7 @@
 - Анализ зависимости RSRP от частоты и параметров антенн
 - Оптимизация tilt/azimuth для балансировки нагрузки
 
+```
 load_balancing_analysis/
 ├── models/                     - Модели данных
 │   ├── __init__.py
@@ -31,6 +32,7 @@ load_balancing_analysis/
 ├── main.py                     Главный модуль
 ├── config.py
 └── requirements.txt
+```
 
 ---
 
