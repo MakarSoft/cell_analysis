@@ -1,0 +1,288 @@
+{
+
+    // Общие настройки окна и интерфейса
+    // =================================
+
+	// Тема оформления (цветовая схема)
+    // "workbench.colorTheme": "Visual Studio 2019 Dark"
+    "workbench.colorTheme": "Visual Studio 2019 Dark",
+
+    // Уровень масштабирования интерфейса. Значение 1 означает 100% масштаб.
+    "window.zoomLevel": 1,
+    // true, позволяет увеличивать и уменьшать масштаб текста
+    // с помощью колесика мыши.
+    "editor.mouseWheelZoom": true,
+
+    // Определяет, что открывать при запуске.
+    // newUntitledFile означает открытие нового пустого файла.
+    "workbench.startupEditor": "none",   // "newUntitledFile",
+    // false, отключает советы и подсказки при запуске
+    "workbench.tips.enabled": false,
+    // Определяет, как отображать подсказку для пустого редактора.
+    // hidden скрывает подсказку.
+    "workbench.editor.empty.hint": "hidden",
+
+    // Устанавливает тему иконок.
+    "workbench.iconTheme": "material-icon-theme",
+    // true, Скрыть стрелки у папок в проводнике
+    "material-icon-theme.hidesExplorerArrows": true,
+
+    // Определяет, как отображать направляющие отступов в дереве. none отключает их.
+    "workbench.tree.renderIndentGuides": "none",
+    // Определяет расположение боковой панели. right означает, что панель будет справа.
+    "workbench.sideBar.location": "right",
+    // Определяет расположение панели активности. default означает стандартное расположение.
+    "workbench.activityBar.location": "default",
+    // Определяет поведение при нажатии на значок панели активности.
+    // focus означает, что фокус будет перемещен на соответствующий элемент.
+    "workbench.activityBar.iconClickBehavior": "focus",
+    // true, отображает строку состояния.
+    "workbench.statusBar.visible": true,
+    // Определяет, как отображать вкладки редактора.
+    //multiple позволяет отображать несколько вкладок.
+    "workbench.editor.showTabs": "multiple",
+    // false, отключает управление макетом.
+    "workbench.layoutControl.enabled": false,
+    // Определяет размер вкладок. shrink означает, что вкладки будут уменьшаться по размеру.
+    "workbench.editor.tabSizing": "shrink",
+
+	// ### Кастомизация цветов
+	// ----------------------------------------
+    "workbench.colorCustomizations": {
+
+        //  цвета границ вкладок...
+        "editorRuler.foreground": "#4a4a24",
+        "tab.hoverBorder": "#5b5c3f",
+        "tab.activeBorder": "#02bc3d",
+
+	    "editorCursor.background": "#000000",
+		"editorOverviewRuler.wordHighlightStrongForeground": "#0000",
+	    "editorOverviewRuler.selectionHighlightForeground": "#0000",
+	    "editorOverviewRuler.rangeHighlightForeground": "#0000",
+	    "editorOverviewRuler.wordHighlightForeground": "#0000",
+	    "editorOverviewRuler.bracketMatchForeground": "#0000",
+	    "editorOverviewRuler.findMatchForeground": "#0000",
+	    "editorOverviewRuler.modifiedForeground": "#0000",
+	    "editorOverviewRuler.deletedForeground": "#0000",
+	    "editorOverviewRuler.warningForeground": "#0000",
+	    "editorOverviewRuler.addedForeground": "#0000",
+	    "editorOverviewRuler.errorForeground": "#0000",
+	    "editorOverviewRuler.infoForeground": "#0000",
+	    "editorOverviewRuler.border": "#0000",
+
+        // "editorSuggestWidget.selectedBackground": "#231739",
+        // "sideBar.background": "#140E1A",
+        // "list.activeSelectionBackground": "#231739",
+        // "list.inactiveSelectionBackground": "#231739",
+        // "list.focusBackground": "#231739",
+        // "list.hoverBackground": "#231739"
+
+	    "[Aura Dracula Spirit (Soft)]": {
+			"editorSuggestWidget.selectedBackground": "#3A334B",
+			"sideBar.background": "#191521"
+	    }
+	},
+	// Доп. настройки цветов:
+	// - Скрытие всех элементов в overview ruler (правой мини-панели)
+	// - Специфичные цвета для темы Aura Dracula
+
+
+	// ### Кастомные стили интерфейса (CSS-оверрайды)
+	// ----------------------------------------
+	// Настройки для Electron (позиция кнопок окна)
+    "custom-ui-style.electron": {
+	    "titleBarStyle": "hiddenInset",
+	    "trafficLightPosition": {
+	      "x": 20,
+	      "y": 16
+	    }
+	},
+
+    "custom-ui-style.stylesheet": {
+	    ".notification-toast": "box-shadow: none !important",
+	    ".quick-input-widget.show-file-icons": "box-shadow: none !important",
+	    ".quick-input-widget": "top: 25vh !important",
+	    ".quick-input-list .scrollbar": "display: none",
+	    ".monaco-action-bar.quick-input-inline-action-bar": "display: none",
+	    ".editor-widget.find-widget": "box-shadow: none; border-radius: 4px",
+	    ".quick-input-titlebar": "background: #100B15 !important",
+	    ".monaco-workbench .part.editor > .content .editor-group-container > .title.title-border-bottom:after": "display: none",
+	    ".monaco-scrollable-element > .shadow.top": "display: none",
+	    ".sidebar .title-label": "padding: 0 !important",
+	    ".sidebar": "border: none !important",
+	    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
+	    ".monaco-list-row.focused": "outline: none !important",
+	    ".monaco-editor .scroll-decoration": "display: none",
+	    ".title-actions": "display: none !important",
+	    ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "justify-content: center; padding: 0 !important",
+	    ".title .monaco-icon-label:after": "margin-right: 0",
+	    ".monaco-workbench .part.editor > .content .editor-group-container > .title > .label-container > .title-label": "padding-left: 60px",
+		".title .monaco-icon-label.file-icon": "margin: 0 60px",
+	    ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #ffaffc 10%, #DA70D6 100%)"
+	},
+	// Кастомные CSS-правила:
+	// - Убрать тени у уведомлений
+	// - Стили для quick-input (поиска)
+	// - Скрытие различных элементов интерфейса
+	// - Кастомный курсор с градиентом
+	"custom-ui-style.font.sansSerif": "Dank Mono",
+	// Шрифт для интерфейса
+
+
+
+    // Настройки курсора
+    // ================
+    // Определяет стиль мигания курсора. expand означает, что курсор будет расширяться.
+    "editor.cursorBlinking": "expand",
+    // Определяет, будет ли анимация курсора плавной.
+    // explicit означает, что анимация будет включена только при явном указании.
+    "editor.cursorSmoothCaretAnimation": "explicit",
+    // "editor.cursorSmoothCaretAnimation": "on",
+    // Определяет стиль курсора. line означает, что курсор будет иметь вид линии.
+    "editor.cursorStyle": "line-thin",
+
+    // Настройки шрифта
+    // ================
+    // Размер шрифта
+    "editor.fontSize": 16,
+    // Высота строки.
+    "editor.lineHeight": 1.3,
+    // true, включает лигатуры в шрифте.
+    "editor.fontLigatures": true,
+    // Устанавливает шрифт редактора. В данном случае используется JetBrains Mono
+    "editor.fontFamily": "JetBrains Mono",
+    // Устанавливает шрифт для встроенных подсказок. Используется PragmataPro
+    "editor.inlayHints.fontFamily": "PragmataPro",
+
+    // Настройки редактора
+    // ===================
+
+    // false, отключает мини-карту
+    "editor.minimap.enabled": false,
+    // true, отображает направляющие для отступов.
+    "editor.guides.indentation": true,
+    // Определяет, как отображать пробелы.
+    // all означает отображение всех пробелов
+    "editor.renderWhitespace": "all",
+    // Определяет, как выделять текущую строку.
+    // gutter означает выделение в области номера строки.
+    "editor.renderLineHighlight": "gutter",
+    // always, всегда выделяет соответствующие скобки.
+    "editor.matchBrackets": "always",
+    // Определяет, когда отображать лампочку с подсказками.
+    // onCode означает, что она будет отображаться при наличии кода.
+    "editor.lightbulb.enabled": "onCode",
+    // true, включает всплывающие подсказки.
+    "editor.hover.enabled": true,
+
+    // Определяет, как отображать элементы управления сворачиванием.
+    // always означает, что они всегда будут видны.
+    "editor.showFoldingControls": "always",
+
+    // Определяет, как отображать горизонтальный скроллбар.
+    // Значение auto означает, что скроллбар будет отображаться автоматически,
+    // когда это необходимо.
+    "editor.scrollbar.horizontal": "auto",
+    // Устанавливает размер горизонтального скроллбара
+    "editor.scrollbar.horizontalScrollbarSize": 7,
+    // Определяет, как отображать вертикальный скроллбар.
+    // Значение hidden означает, что вертикальный скроллбар будет скрыт.
+    "editor.scrollbar.vertical": "auto",
+    //
+    "editor.scrollbar.verticalScrollbarSize": 7,
+
+    // false, курсор будет виден в области предварительного просмотра.
+    "editor.hideCursorInOverviewRuler": false,
+    // alse, отключает границу для области предварительного просмотра.
+    "editor.overviewRulerBorder": false,
+    // Устанавливает размер табуляции.
+    "editor.tabSize": 4,
+    // true, редактор будет автоматически определять отступы в файлах.
+    "editor.detectIndentation": true,
+
+    // false, отключает сворачивание кода.
+    "editor.folding": true,
+    "editor.foldingStrategy": "auto",
+    // true, вставляет пробелы вместо табуляции при нажатии клавиши Tab.
+    "editor.insertSpaces": true,
+    // true, включает плавную прокрутку.
+    "editor.smoothScrolling": true,
+    // Определяет, как выбирать предложения автозаполнения.
+    // Значение first означает, что будет выбрано первое предложение.
+    "editor.suggestSelection": "first",
+    // Определяет модификатор для работы с несколькими курсорами.
+    // ctrlCmd означает использование клавиши Ctrl.
+    "editor.multiCursorModifier": "ctrlCmd",
+
+    // Wrapping
+    // --------
+    // Определяет, как оборачивать текст.
+    // Значение bounded означает, что текст будет
+    // оборачиваться в пределах заданной ширины.
+    "editor.wordWrap": "bounded",
+    // Определяет, как будет выглядеть отступ для обернутых строк.
+    // Значение same означает, что обернутые строки будут иметь
+    // такой же отступ, как и предыдущая строка.
+    "editor.wrappingIndent": "same",
+    // Устанавливает ширину, при которой будет происходить обертка текста.
+    "editor.wordWrapColumn": 120,
+    "editor.rulers": [80, 120],
+    "editor.scrollBeyondLastLine": true,
+
+    // Настройки проводника и файлов
+    // ===============================
+    // "breadcrumbs.enabled": false,
+
+    // false, отключает подтверждение при перетаскивании и сбрасывании файлов.
+    "explorer.confirmDragAndDrop": false,
+    // false, отключает подтверждение при удалении файлов.
+    "explorer.confirmDelete": false,
+    // false, отключает компактное отображение папок в проводнике.
+    "explorer.compactFolders": false,
+    // true, добавляет новую строку в конце файла при сохранении.
+    "files.insertFinalNewline": true,
+    // true, игнорирует рекомендации по установке расширений.
+    "extensions.ignoreRecommendations": true,
+    // Определяет, как автоматически сохранять файлы.
+    // Значение afterDelay означает, что файлы будут сохраняться
+    // автоматически через заданный интервал времени.
+    "files.autoSave": "afterDelay",
+
+    //Terminal
+    //========
+    // Устанавливает шрифт для интегрированного терминала.
+    "terminal.integrated.fontFamily": "monospace",
+    // Устанавливает размер шрифта в терминале.
+    "terminal.integrated.fontSize": 12,
+    // Устанавливает высоту строки в терминале.
+    "terminal.integrated.lineHeight": 1.3,
+    // true, включает вкладки в терминале.
+    "terminal.integrated.tabs.enabled": true,
+
+    // Настройки для Python
+    // ====================
+
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--fast",
+        "--line-length=88",
+        "--skip-string-normalization",
+        "--target-version=py312",
+        "--experimental-string-processing",
+        "--experimental-string-normalization",
+        "--target-version=py312"
+    ],
+
+    "[python]": {
+        // Устанавливает форматировщик по умолчанию для Python.
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+
+    // Настройки для файлов
+    // ====================
+
+    // true, удаляет пробелы в конце строк при сохранении файла.
+    "files.trimTrailingWhitespace": true,
+    // true, удаляет пустые строки в конце файла при сохранении.
+    "files.trimFinalNewlines": true,
+}

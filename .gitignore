@@ -1,0 +1,21 @@
+# Распространенные игнорируемые файлы
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyc
+.env
+.venv
+venv/
+env/
+*.egg-info/
+dist/
+build/
+*.csv
+*.html
+*.png
+*.gif
+*.log
+*.cache
+.DS_Store
+results/
